@@ -10,9 +10,7 @@ public class Main {
     public static void main(String[] args) {
         List<PrintJob> jobs = new ArrayList<>();
 
-        // Membaca file jobs.txt
         File file = new File("jobs.txt");
-        // Jika file diletakkan di root atau direktori tertentu, pastikan path sesuai saat dijalankan
         if (!file.exists()) {
             file = new File("src/lw01/prelab/jobs.txt");
         }
@@ -34,7 +32,6 @@ public class Main {
             return;
         }
 
-        // Cetak summary() menggunakan Runtime Polymorphism
         for (PrintJob job : jobs) {
             System.out.println(job.summary());
         }
