@@ -28,7 +28,7 @@ public abstract class PrintJob implements Chargeable {
             throw new IllegalArgumentException("Copies must be greater than zero.");
         }
         return copies * calculateCharge();
-    }
+    } 
 
     public String label() {
         return "Print";
