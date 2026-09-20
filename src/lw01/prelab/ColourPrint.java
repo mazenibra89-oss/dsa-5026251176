@@ -19,7 +19,7 @@ public class ColourPrint extends PrintJob {
 
         return baseCharge + 2000;
     }
-
+ 
     @Override
     public String label() {
         return "Colour";
